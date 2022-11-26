@@ -33,7 +33,7 @@ const ShortBio: FC<ShortBioProps> = ({
               height={12}
             />
           </div>
-          <span className="text-xs font-medium">{major}</span>
+          <span className="text-xs font-medium  ml-2">{major}</span>
         </div>
         <div className="flex items-center">
           <div className="flex gap-2 justify-center items-center w-[22px] h-[22px] rounded-full bg-grey-foreground">
@@ -44,7 +44,7 @@ const ShortBio: FC<ShortBioProps> = ({
               height={12}
             />
           </div>
-          <span className="text-xs font-medium">{work}</span>
+          <span className="text-xs font-medium  ml-2">{work}</span>
         </div>
       </div>
       <Separator className="my-4" />
