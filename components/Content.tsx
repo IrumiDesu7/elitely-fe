@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { FC } from 'react';
 import AboutBio from './about/AboutBio';
+import Meetups from './about/Meetups';
 import Carousel from './Carousel';
 import ShortBio from './contents/ShortBio';
 
@@ -37,6 +38,7 @@ Coffee, cold showers and early morning walks!"
             major="SIM-UOL"
             work="Student at University"
           />
+          <Meetups />
         </div>
       )}
     </>
