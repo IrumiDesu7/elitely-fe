@@ -13,7 +13,7 @@ const Content: FC<ContentProps> = ({ isMainActive }) => {
   return (
     <>
       {isMainActive && (
-        <div className="flex flex-col  pt-4 ">
+        <div className="flex flex-col  pt-4 md:bg-white md:rounded-[10px] md:m-4">
           <img
             src="/post-profile.png"
             alt="post image"
