@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { useState } from 'react';
 import ArrowNav from '../components/ArrowNav';
 import Separator from '../components/base/Separator';
 import Content from '../components/Content';
@@ -7,6 +8,8 @@ import Navbar from '../components/Navbar';
 import ProfileHeader from '../components/profile-header/ProfileHeader';
 
 export default function Home() {
+  const [isMainActive, setIsMainActive] = useState(true);
+
   return (
     <div>
       <Head>
@@ -19,9 +22,12 @@ export default function Home() {
         <ArrowNav desc="Explore" />
         <ProfileHeader />
         <div className="bg-[#FAFAFA] pb-16 ">
-          <Navbar />
+          <Navbar
+            setIsMainActive={setIsMainActive}
+            isMainActive={isMainActive}
+          />
           <Separator />
-          <Content activeContent="main" />
+          <Content isMainActive={isMainActive} />
         </div>
         <MenuBar />
       </main>
