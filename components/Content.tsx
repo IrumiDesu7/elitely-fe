@@ -13,11 +13,11 @@ const Content: FC<ContentProps> = ({ isMainActive }) => {
   return (
     <>
       {isMainActive && (
-        <div className="flex flex-col  pt-4 md:bg-white md:rounded-[10px] md:m-4">
+        <div className="flex flex-col pt-4 md:bg-white md:rounded-[10px] md:m-4">
           <img
             src="/post-profile.png"
             alt="post image"
-            className="h-auto max-w-xl self-center"
+            className="h-auto max-w-xs self-center"
           />
           <Carousel />
           <ShortBio

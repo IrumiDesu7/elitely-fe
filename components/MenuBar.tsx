@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const MenuBar: FC = () => {
   return (
-    <div className="flex md:hidden justify-center gap-[71.3px] bg-white fixed bottom-0 w-full h-16 overflow-hidden">
+    <div className="flex md:hidden justify-center gap-16 sm:gap-[71.3px] bg-white fixed bottom-0 w-full h-16 overflow-hidden">
       <Image
         src="/home-icon.svg"
         alt="menu bar icon"
