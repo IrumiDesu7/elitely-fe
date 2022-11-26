@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { FC } from 'react';
 import AboutBio from './about/AboutBio';
+import Meetups from './about/Meetups';
 import Carousel from './Carousel';
 import ShortBio from './contents/ShortBio';
 
@@ -12,7 +13,7 @@ const Content: FC<ContentProps> = ({ isMainActive }) => {
   return (
     <>
       {isMainActive && (
-        <div className="flex flex-col  pt-4 ">
+        <div className="flex flex-col  pt-4 md:bg-white md:rounded-[10px] md:m-4">
           <img
             src="/post-profile.png"
             alt="post image"
@@ -37,6 +38,7 @@ Coffee, cold showers and early morning walks!"
             major="SIM-UOL"
             work="Student at University"
           />
+          <Meetups />
         </div>
       )}
     </>

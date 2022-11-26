@@ -65,9 +65,13 @@ const AboutBio: FC<AboutBioProps> = ({ name, age, major, work }) => {
         </ul>
       </div>
       <Separator className="my-4" />
-      <Rating />
-      <Button buttonText="Reviews" className="bg-grey-foreground mt-4" />
-      <Meetups />
+      <div className="md:flex items-center justify-between">
+        <Rating />
+        <Button
+          buttonText="Reviews"
+          className="bg-grey-foreground mt-4 md:mt-0 md:w-[200px]"
+        />
+      </div>
     </div>
   );
 };

@@ -9,9 +9,9 @@ interface NavbarProps {
 const Navbar: FC<NavbarProps> = ({ setIsMainActive, isMainActive }) => {
   return (
     <>
-      <ul className="flex justify-evenly font-semibold text-xs w-full">
+      <ul className="flex justify-evenly font-semibold text-xs w-full md:mt-5">
         <li
-          className="relative py-[15px] px-10 md:px-[49px]"
+          className="relative py-[15px] px-10 md:px-[49px] cursor-pointer hover:opacity-[.8]"
           onClick={() => setIsMainActive(true)}
         >
           Main
@@ -20,7 +20,7 @@ const Navbar: FC<NavbarProps> = ({ setIsMainActive, isMainActive }) => {
           )}
         </li>
         <li
-          className="relative py-[15px] px-10 md:px-[49px] "
+          className="relative py-[15px] px-10 md:px-[49px]  cursor-pointer hover:opacity-[.8]"
           onClick={() => setIsMainActive(false)}
         >
           About
