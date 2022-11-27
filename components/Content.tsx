@@ -15,28 +15,27 @@ const Content: FC<ContentProps> = ({ isMainActive }) => {
       {isMainActive && (
         <div className="flex flex-col pt-4 md:bg-white md:rounded-[10px] md:m-4">
           <img
-            src="/post-profile.png"
+            src="/malo.jpg"
             alt="post image"
             className="h-auto max-w-xs self-center"
           />
           <Carousel />
           <ShortBio
-            name="Xiuxian"
-            age={22}
-            description="Gemini. Art student and tall.
-Coffee, cold showers and early morning walks!"
-            major="SIM-UOL"
-            work="Student at University"
+            name="Maloxcox"
+            age={23}
+            description="Cinta wanita soleh"
+            major="Teknik Informatika"
+            work="Mahasaiswa Abadi di Unidayan"
           />
         </div>
       )}
       {!isMainActive && (
         <div className="flex flex-col  pt-4 ">
           <AboutBio
-            name="Xiuxian"
-            age={22}
-            major="SIM-UOL"
-            work="Student at University"
+            name="Maloxcox"
+            age={23}
+            major="Teknik Informatika"
+            work="Mahasaiswa Abadi di Unidayan"
           />
           <Meetups />
         </div>
