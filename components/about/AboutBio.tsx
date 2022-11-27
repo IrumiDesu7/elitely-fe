@@ -3,7 +3,6 @@ import Image from 'next/image';
 import Separator from '../base/Separator';
 import Rating from '../Rating';
 import Button from '../base/Button';
-import Meetups from './Meetups';
 
 interface AboutBioProps {
   name: string;
