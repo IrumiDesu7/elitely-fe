@@ -3,7 +3,6 @@ import Image from 'next/image';
 import Separator from '../base/Separator';
 import Rating from '../Rating';
 import Button from '../base/Button';
-import Meetups from './Meetups';
 
 interface AboutBioProps {
   name: string;
@@ -55,10 +54,10 @@ const AboutBio: FC<AboutBioProps> = ({ name, age, major, work }) => {
           <li>Meetups</li>
         </ul>
         <ul className="flex-1  flex flex-col gap-1 font-normal text-grey-content">
-          <li>22</li>
-          <li>Chinese</li>
-          <li>English, Mandarin</li>
-          <li>158cm</li>
+          <li>23</li>
+          <li>Butonese</li>
+          <li>Indonesian</li>
+          <li>163cm</li>
           <li>Heterosexual</li>
           <li>30 SGD / 30 days</li>
           <li>200 SGD / 2h</li>
